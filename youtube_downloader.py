@@ -35,9 +35,10 @@ def main():
     """Main function to process YouTube video URLs."""
     # List of YouTube video links (replace with actual URLs)
 
+    url = 'https://www.youtube.com/shorts/nJGhXI4Vizc'
     
-    print(f"Attempting to download audio")
-    downloadsAudio('https://www.youtube.com/watch?v=nQTLs-cv1Gc', outputPath='extracted')
+    print(f"Attempting to download audio from {url}")
+    downloadsAudio(url, outputPath='extracted')
         
 if __name__ == "__main__":
     main()
