@@ -14,7 +14,7 @@ def downloadsAudio(link, outputPath='.'):
         meta = YouTube(link).metadata
         
         # Create a filename based on the video's title and upload date
-        fileName = "youtube_audio.mp3"
+        fileName = f"{link}.mp3"
         
         # Try to download the first audio stream
         
@@ -37,7 +37,7 @@ def main():
 
     
     print(f"Attempting to download audio")
-    downloadsAudio('https://www.youtube.com/watch?v=CXUIvNi7hQ4', outputPath='extracted')
+    downloadsAudio('https://www.youtube.com/watch?v=nQTLs-cv1Gc', outputPath='extracted')
         
 if __name__ == "__main__":
     main()
